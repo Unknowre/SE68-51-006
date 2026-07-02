@@ -6,23 +6,37 @@
     <meta name ="description" content ="Learning about HTML">
     <title>HTML TUTORIAL :684259006</title>
     <style>
+        html{
+            scroll-behavior: smooth;
+        }
         body{
             font-family: Arial, Helvetica, sans-serif;
             margin: 50px;
             background: linear-gradient(200deg, #96cca6, #c0bd91);
-            scroll-behavior: smooth;
+            line-height: 1.5;
 }
         h1,h2{
             color: #bb3cb0;
         }
         a{
             font-size: 1.5rem;
+            text-decoration: none;
+        }
+        a:hover{
+            color: #b30b0b;
+            text-decoration: underline; /*จดในcss*/
         }
         pre{
             background: linear-gradient(200deg, #2d1eaf67, #6b89c2);
             padding: 10px;
-            border: 1px solid #ccc;
+            border: 4px solid #ccc;
+            white-space: pre-wrap;
+            font-size: 16px;
         }
+        .text-center{
+            text-align:center;
+        }
+
     </style>
     <!-- custome -->
 </head>
@@ -66,7 +80,7 @@
 <!-- pre1 -->
 
  <h2 id="Structure">HTML Document Structure</h2>
- <p>
+ <hr>
     An HTML document has the following basic structure...
     คำอธิบาย
 <pre>
@@ -88,8 +102,9 @@
 <!-- headding -->
   <h2 id="Heading">Heading</h2>
  <p>
-    workshop </p>
-    HTML headings are defined with the &lt;h1&gt; to &lt;h6&gt; tags...
+    workshop  HTML headings are defined with the &lt;h1&gt; to &lt;h6&gt; tags...</p>
+    <a href="w03-01-heading.html">Workshop1</a>
+    <a href="w03-02-heading.html">Workshop2</a>
 <pre>
 - &lt;h1&gt;: Heading 1
 - &lt;h2&gt;: Heading 2
@@ -317,6 +332,11 @@ radio, checkbox, date, file
 -workshop 01:rabbit
 -workshop 02:Login</pre>
 <a href="#top2">bacK to top</a>
+<hr>
+<p class="text-center">
+    <a href="https://www.w3schools.com/html/default.asp"></a>Learn more abount html</a>
+</p>
+<p class="text-center">&copy; 2026 Create by : 684259006 : PUN </p>
 
 </body>
 </html>
