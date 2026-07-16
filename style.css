@@ -6,7 +6,7 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #4c477a;
+  background-color: #ffb8cd;
   line-height: 1.7;
   display: flex;
   flex-direction: column;
@@ -55,7 +55,7 @@ ul {
 .header {
   width: 1000px;
   height: 50px;
-  color: #b90f42;
+  color: #ff6694;
 }
 
 .item li {
