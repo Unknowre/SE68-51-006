@@ -7,298 +7,343 @@
     <title>Formatting</title>
     <style>
         * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #ebf8ff;
-    
-    line-height: 1.6;
-}
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ebf8ff;
 
-footer,
+            line-height: 1.6;
+        }
 
-.tip-box {
-    border: 1px solid #ff0000;
-    background-color: #fff;
-    margin: 20px;
-    padding: 20px;
-}
-header {
-    background: linear-gradient(to right, #0036aa, #325bfc);
-    padding: 20px;
-    color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        footer,
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+        .tip-box {
+            border: 1px solid #ff0000;
+            background-color: #fff;
+            margin: 20px;
+            padding: 20px;
+        }
 
-.brand {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
+        header {
+            background: linear-gradient(to right, #0036aa, #325bfc);
+            padding: 20px;
+            color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
-.brand-icon { font-size: 50px; }
-.brand-text p { font-size: 14px}
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-/* navigation */
-nav a {
-    color: white;
-    text-decoration: none;
-    margin-left: 20px;
-}
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
 
-nav a:hover {
-    text-decoration: underline;
-}
+        .brand-icon {
+            font-size: 50px;
+        }
 
+        .brand-text p {
+            font-size: 14px
+        }
 
-/* hero section */
-.hero {
-    display: flex;
-    gap: 10px;
+        /* navigation */
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
 
-    padding: 40px;
-}
-
-.hero-icon {
-    background-color: #325bfc;
-    color: #fff;
-    border-radius: 15px;
-
-    width: 90px;
-    height: 90px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    font-size: 40px;
-    font-weight: bold;
-
-    
-
-}
-
-.hero-text h1 {
-    font-size: 40px;
-    color: #1a2d78;
-}
-
-.hero-text p {
-    font-size: 20px;
-    color: #474748;
-}
+        nav a:hover {
+            text-decoration: underline;
+        }
 
 
-/* Main content */
+        /* hero section */
+        .hero {
+            display: flex;
+            gap: 10px;
 
-.container {
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 20px;
-    
-}
+            padding: 40px;
+        }
+
+        .hero-icon {
+            background-color: #325bfc;
+            color: #fff;
+            border-radius: 15px;
+
+            width: 90px;
+            height: 90px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-size: 40px;
+            font-weight: bold;
 
 
-.card-grid {
-    display: grid;
-    /* grid-template-columns: 1fr 1fr 1fr; */
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
 
-    /* background-color: #fffb2c; */
-}
+        }
 
-.card {
-    background-color: #fff;
+        .hero-text h1 {
+            font-size: 40px;
+            color: #1a2d78;
+        }
 
-    border-radius: 16px;
-    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.11);
-    border: 1px solid rgb(127, 134, 205);
-    overflow: hidden;
-}
+        .hero-text p {
+            font-size: 20px;
+            color: #474748;
+        }
 
-.card-header{
-    background-color: rgb(207, 223, 235);
-    color: #0036aa;
-    font-size: 18px;
-    font-weight: bold;
-    padding: 20px;
-    border-bottom: 1px solid rgb(207, 223, 235);
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
 
-.card-header-icon{
-    background-color: blue;
-    color: white;
+        /* Main content */
 
-    border-radius: 50%;
-    width: 38px;
-    height: 38px;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-}
+        .container {
+            max-width: 1200px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 20px;
 
-.card-body{
-    padding: 20px;
-}
-.format-row{
-    display: grid;
-    grid-template-columns: 100px 1fr;
-    margin-bottom: 8px;
-    gap: 20px;
-    border-bottom: 1px solid rgb(201, 231, 231);
-    padding: 6px 0;
-}
+        }
 
-.label{
-    background-color: red;
-    border-radius: 8px;
-    color: white;
-    font-weight: bold;
-    text-align: center;
-}
-.b-label{
-    background-color: rgb(71, 71, 226);
-}
-.strong-label {
-    background-color: green;
-}
-.i-label{
-    background-color: greenyellow;
-}
-.em-label{
-    background-color: brown;
-}
-.u-label{
-    background-color: brown;
-}
-.mark-label{background-color: purple;}
-.small-lebel{
-    background-color: purple;
-}
-.del-label{background-color: red;}
-.sup-label{background-color: purple;}
-.sub-label{background-color: cyan}
 
-/*card2 */
-.pre-box{
-    background-color: black;
-    border-radius: 10px;
-    color: white;
-    padding: 20px;
-}
-.html-tag{
-    color: red;
-}
-.line-no{
-    color: green;
-    display: inline-block;
-    width: 20px;
-}
+        .card-grid {
+            display: grid;
+            /* grid-template-columns: 1fr 1fr 1fr; */
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
 
-/* เพิ่มเติมเฉพาะส่วนการ์ดที่ 3 และเกร็ดความรู้เพื่อให้แสดงผลตามรูป */
-.card-3-body {
-    padding: 20px;
-}
-.task-list {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-}
-.task-list li {
-    display: flex;
-    align-items: flex-start;
-    gap: 12px;
-    font-size: 15px;
-    color: #333;
-}
-.task-check {
-    background-color: #2563eb;
-    color: rgb(255, 255, 255);
-    border-radius: 50%;
-    width: 24px;
-    height: 24px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 12px;
-    font-weight: bold;
-    flex-shrink: 0;
-    margin-top: 2px;
-}
-.task-check.c-green { background-color: #16a34a; }
-.task-check.c-blue { background-color: #2563eb; }
-.task-check.c-orange { background-color: #d97706; }
-.task-check.c-purple { background-color: #9333ea; }
+            /* background-color: #fffb2c; */
+        }
 
-.file-badge {
-    background-color: #eff6ff;
-    color: #1d4ed8;
-    border: 1px solid #bfdbfe;
-    padding: 2px 8px;
-    border-radius: 6px;
-    font-family: monospace;
-    font-weight: bold;
-}
+        .card {
+            background-color: #fff;
 
-.tip-box {
-    background-color: #fffdf0;
-    border: 1px solid #f6e05e;
-    border-radius: 16px;
-    display: flex;
-    gap: 20px;
-    align-items: flex-start;
-}
-.tip-icon {
-    font-size: 32px;
-    background-color: #fef08a;
-    border-radius: 50%;
-    width: 55px;
-    height: 55px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
-}
-.tip-content h2 {
-    font-size: 20px;
-    color: #b45309;
-    margin-bottom: 8px;
-}
-.tip-content p {
-    color: #474748;
-    font-size: 15px;
-}
-.tip-content .tag-hl {
-    color: #2563eb;
-    font-family: monospace;
-    font-weight: bold;
-}
+            border-radius: 16px;
+            box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.11);
+            border: 1px solid rgb(127, 134, 205);
+            overflow: hidden;
+        }
 
-footer {
-    background-color: #e0f2fe;
-    border: 1px solid #bae6fd;
-    color: #0369a1;
-    text-align: center;
-    border-radius: 12px;
-}
-</style>
+        .card-header {
+            background-color: rgb(207, 223, 235);
+            color: #0036aa;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 20px;
+            border-bottom: 1px solid rgb(207, 223, 235);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .card-header-icon {
+            background-color: blue;
+            color: white;
+
+            border-radius: 50%;
+            width: 38px;
+            height: 38px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        .format-row {
+            display: grid;
+            grid-template-columns: 100px 1fr;
+            margin-bottom: 8px;
+            gap: 20px;
+            border-bottom: 1px solid rgb(201, 231, 231);
+            padding: 6px 0;
+        }
+
+        .label {
+            background-color: red;
+            border-radius: 8px;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .b-label {
+            background-color: rgb(71, 71, 226);
+        }
+
+        .strong-label {
+            background-color: green;
+        }
+
+        .i-label {
+            background-color: greenyellow;
+        }
+
+        .em-label {
+            background-color: brown;
+        }
+
+        .u-label {
+            background-color: brown;
+        }
+
+        .mark-label {
+            background-color: purple;
+        }
+
+        .small-lebel {
+            background-color: purple;
+        }
+
+        .del-label {
+            background-color: red;
+        }
+
+        .sup-label {
+            background-color: purple;
+        }
+
+        .sub-label {
+            background-color: cyan
+        }
+
+        .pre-box {
+            background-color: black;
+            border-radius: 10px;
+            color: white;
+            padding: 20px;
+        }
+
+        .html-tag {
+            color: red;
+        }
+
+        .line-no {
+            color: green;
+            display: inline-block;
+            width: 20px;
+        }
+
+        .card-3-body {
+            padding: 20px;
+        }
+
+        .task-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        .task-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            font-size: 15px;
+            color: #333;
+        }
+
+        .task-check {
+            background-color: #2563eb;
+            color: rgb(255, 255, 255);
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 12px;
+            font-weight: bold;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .task-check.c-green {
+            background-color: #16a34a;
+        }
+
+        .task-check.c-blue {
+            background-color: #2563eb;
+        }
+
+        .task-check.c-orange {
+            background-color: #d97706;
+        }
+
+        .task-check.c-purple {
+            background-color: #9333ea;
+        }
+
+        .file-badge {
+            background-color: #eff6ff;
+            color: #1d4ed8;
+            border: 1px solid #bfdbfe;
+            padding: 2px 8px;
+            border-radius: 6px;
+            font-family: monospace;
+            font-weight: bold;
+        }
+
+        .tip-box {
+            background-color: #fffdf0;
+            border: 1px solid #f6e05e;
+            border-radius: 16px;
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+        }
+
+        .tip-icon {
+            font-size: 32px;
+            background-color: #fef08a;
+            border-radius: 50%;
+            width: 55px;
+            height: 55px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-shrink: 0;
+        }
+
+        .tip-content h2 {
+            font-size: 20px;
+            color: #b45309;
+            margin-bottom: 8px;
+        }
+
+        .tip-content p {
+            color: #474748;
+            font-size: 15px;
+        }
+
+        .tip-content .tag-hl {
+            color: #2563eb;
+            font-family: monospace;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #e0f2fe;
+            border: 1px solid #bae6fd;
+            color: #0369a1;
+            text-align: center;
+            border-radius: 12px;
+        }
+    </style>
 
     <link rel="stylesheet" href="css/w04-formatting.css">
 </head>
+
 <body>
     <!-- Header -->
     <header>
@@ -422,7 +467,8 @@ footer {
                         <li>
                             <span class="task-check c-green">✓</span>
                             <span>
-                                ทดลองเปรียบเทียบ <b>&lt;b&gt;</b> กับ <strong>&lt;strong&gt;</strong> และ <i>&lt;i&gt;</i> กับ <em>&lt;em&gt;</em>
+                                ทดลองเปรียบเทียบ <b>&lt;b&gt;</b> กับ <strong>&lt;strong&gt;</strong> และ
+                                <i>&lt;i&gt;</i> กับ <em>&lt;em&gt;</em>
                             </span>
                         </li>
                         <li>
