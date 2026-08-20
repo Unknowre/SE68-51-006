@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Kanit", sans-serif;
+  color: rgb(61, 57, 57);
+  background-color: azure;
+  line-height: 1.6;
+}
+.container {
+  /* border: 1px solid blue;
+  padding: 15px;
+  margin: 15px; */
+}
+
+/* header section */
+
+.site-header {
+  /* border: 1px solid red;
+  padding: 15px;
+  margin: 15px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(rgb(17, 67, 120), rgb(10, 10, 110));
+}
+.brand-logo {
+  background-color: white;
+  border-radius: 50px;
+  font-size: 30px;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.brand-text h2 {
+  font-size: 28px;
+  color: white;
+}
+
+.brand-text p {
+  font-size: 14px;
+  opacity: 0.7;
+  color: white;
+}
+
+.brand {
+  border: 1px solid rgb(14, 104, 26);
+  padding: 15px;
+  margin: 15px;
+}
+
+.main-nav {
+  /* border: 1px solid rgb(14, 104, 26);
+  padding: 15px;
+  margin: 15px; */
+}
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-list a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 8px;
+
+  transition: 2;
+}
+
+.nav-list a:hover {
+  background-color: rgb(216, 211, 202);
+}
+
+/* main section */
+
+.main-layout {
+  /* border: 1px solid red;
+  padding: 15px;
+  margin: 15px; */
+
+  display: grid;
+  grid-template-columns: 1fr 390px;
+  /* grid-template-columns:80% 60%; */
+  padding: 20px 22px;
+}
+
+/* left content */
+.left-content {
+  /* border: 1px solid rgb(146, 125, 3);
+  padding: 15px;
+  margin: 15px; */
+}
+.hero {
+  /* border: 1px solid green;
+  padding: 15px;
+  margin: 15px; */
+  display: grid;
+  grid-template-columns: 1.5fr 0.8fr;
+  padding: 26px 36px;
+  background: linear-gradient(90deg, white, rgb(145, 145, 218));
+  box-shadow: 0 4px 8px black;
+  border-radius: 15px;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.hero-text h1 {
+  font-size: 36px;
+  color: rgb(67, 67, 126);
+  line-height: 1.6;
+}
+
+.hero-text p {
+  font-size: 21px;
+  color: rgb(134, 134, 168);
+  font-weight: 600;
+}
+
+.hero-photo img {
+  width: 400px;
+  height: 200px;
+  border: 3px solid rgb(71, 125, 224);
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px black;
+
+  /*
+    object-fit: contain ➡️เห็นภาพครบ รักษาสัดส่วน (อาจมีขอบว่าง)
+    object-fit: fill ➡️ยืดภาพให้เต็มกล่อง ภาพอาจบิด (สัดส่วนเพี้ยน)
+    object-fit: cover ➡️ครอปภาพให้เต็มกล่อง รักษาสัดส่วน บางส่วนของภาพจะถูกตัดออก
+    */
+}
+.card {
+  border: 1px solid green;
+  padding: 15px;
+  margin: 15px;
+}
+
+/* right sidebar */
+.right-sidebar {
+  border: 1px solid rgb(146, 125, 3);
+  padding: 15px;
+  margin: 15px;
+}
+.side-card {
+}
+.submit-card {
+}
+/* footer section */
+
+.tipbox {
+  border: 1px solid red;
+  padding: 15px;
+  margin: 15px;
+}
