@@ -249,3 +249,37 @@ body{
     margin:20px;
     padding:20px;
 }
+
+.custom-list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 15px;
+    counter-reset: my-counter;
+}
+
+.custom-list li {
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.custom-list li::before {
+    content: counter(my-counter);
+    counter-increment: my-counter;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 25px;
+    height: 25px;
+    background-color: #2b5fe7;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    font-weight: bold;
+}
