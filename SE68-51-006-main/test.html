@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatting</title>
+    <style>
+        * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ebf8ff;
+    
+    line-height: 1.6;
+}
+
+footer,
+/* .hero, */
+/* .card, */
+.tip-box {
+    border: 1px solid #ff0000;
+    background-color: #fff;
+    margin: 20px;
+    padding: 20px;
+}
+header {
+    background: linear-gradient(to right, #0036aa, #325bfc);
+    padding: 20px;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.brand-icon { font-size: 50px; }
+.brand-text p { font-size: 14px}
+
+/* navigation */
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* hero section */
+.hero {
+    display: flex;
+    gap: 10px;
+
+    padding: 40px;
+}
+
+.hero-icon {
+    background-color: #325bfc;
+    color: #fff;
+    border-radius: 15px;
+
+    width: 90px;
+    height: 90px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 40px;
+    font-weight: bold;
+
+    
+
+}
+
+.hero-text {}
+
+.hero-text h1 {
+    font-size: 40px;
+    color: #1a2d78;
+}
+
+.hero-text p {
+    font-size: 20px;
+    color: #474748;
+}
+
+
+/* Main content */
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    
+}
+
+
+.card-grid {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+    /* background-color: #fffb2c; */
+}
+
+.card {
+    background-color: #fff;
+
+    border-radius: 16px;
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.11);
+    border: 1px solid rgb(127, 134, 205);
+    overflow: hidden;
+}
+
+.card-header{
+    background-color: rgb(207, 223, 235);
+    color: #0036aa;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 20px;
+    border-bottom: 1px solid rgb(207, 223, 235);
+}
+
+.card-header-icon{
+    background-color: blue;
+    color: white;
+
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-body{
+    padding: 20px;
+}
+.format-row{
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    margin-bottom: 8px;
+    gap: 20px;
+    border-bottom: 1px solid rgb(201, 231, 231);
+    padding: 6px 0;
+}
+
+.label{
+    background-color: red;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+.b-label{
+    background-color: rgb(71, 71, 226);
+}
+.strong-label {
+    background-color: green;
+}
+.i-label{
+    background-color: greenyellow;
+}
+.em-label{
+    background-color: brown;
+}
+.u-label{
+    background-color: brown;
+}
+.mark-label{background-color: purple;}
+.small-lebel{
+    background-color: purple;
+}
+.del-label{background-color: red;}
+.sup-label{background-color: purple;}
+.sub-label{background-color: cyan}
+.card-body{
+    
+}
+/*card2 */
+.pre-box{
+    background-color: black;
+    border-radius: 10px;
+    color: white;
+    padding: 20px;
+}
+.html-tag{
+    color: red;
+}
+.line-no{
+    color: green;
+    display: inline-block;
+    width: 20px;
+}
+</style>
+
+    <link rel="stylesheet" href="css/w04-formatting.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="brand">
+            <div class="brand-icon">🧣</div>
+            <div class="brand-text">
+                <h2>เรียนรู้เว็บเบื้องต้น</h2>
+                <p>Basic Web Development</p>
+            </div>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="W03-02-heading-51.html">Heading</a>
+            <a href="W04-01-formating.html">Formatting</a>
+            <a href="#">Links</a>
+
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero">
+
+
+        <div class="hero-icon">&lt;/&gt;</div>
+
+        <div class="hero-text">
+            <h1>แบบฝึกปฏิบัติ: HTML Formatting</h1>
+            <p>
+                เรียนรู้การจัดรูปแบบข้อความด้วยแท็ก HTML
+                พร้อมตัวอย่างและการตกแต่งด้วย CSS
+            </p>
+        </div>
+
+
+
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="card-grid">
+            <!-- card 1 -->
+            <div class="card">
+                <div class="card-header">
+                    <span class="card-header-icon">🖥</span> ตัวอย่างผลลัพธ์
+                </div>
+                <div class="card-body">
+
+                    <div class="format-row">
+                        <span class="label b-label">B:</span>
+                        <b>ข้อความตัวหนา</b>
+                    </div>
+
+                    <div class="format-row">
+                        <span class="label strong-label">STRONG:</span>
+                        <strong>ข้อความสำคัญ</strong>
+                    </div>
+                    <div class="format-row">
+                        <span class="label i-label">I:</span>
+                        <i>ข้อความตัวเอียง</i>
+                    </div>
+
+                    <div class="format-row">
+                        <span class="label em-label">EM:</span>
+                        <em>ข้อความเน้นเสียง</em>
+                    </div>
+
+                    <div class="format-row">
+                        <span class="label u-label">U:</span>
+                        <u>ข้อความขีดเส้นใต้</u>
+                    </div>
+
+                    <div class="format-row">
+                        <span class="label mark-label">MARK:</span>
+                        <mark>ข้อความที่ถูกเน้น</mark>
+                    </div>
+
+                    <div class="format-row">
+                        <span class="label small-lebel">SMALL:</span>
+                        <small>ข้อความขนาดเล็ก</small>
+                    </div>
+
+                    <div class="format-row">
+                        <span class="label del-label">DEL:</span>
+                        <del>ข้อความที่ถูกลบ</del>
+                    </div>
+
+                    <div class="format-row">
+                        <span class="label sub-label">SUP:</span>
+                        <span>x<sup>2</sup></span>
+                    </div>
+
+                    <div class="format-row">
+                        <span class="label sub-label">SUB:</span>
+                        <span>H<sub>2</sub>O</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- card 2 -->
+<!-- card 2 -->
+<div class="card">
+
+    <div class="card-header">
+        <span class="card-header-icon">&lt;/&gt;</span>
+        ตัวอย่างโค้ด HTML
+    </div>
+
+    <div class="card-body">
+        <div class="pre-box">
+            <pre><span class="line-no">1</span> <span class="html-tag">&lt;b&gt;</span>ข้อความตัวหนา<span class="html-tag">&lt;/b&gt;</span>
+<span class="line-no">2</span> <span class="html-tag">&lt;strong&gt;</span>ข้อความสำคัญ<span class="html-tag">&lt;/strong&gt;</span>
+<span class="line-no">3</span> <span class="html-tag">&lt;i&gt;</span>ข้อความตัวเอียง<span class="html-tag">&lt;/i&gt;</span>
+<span class="line-no">4</span> <span class="html-tag">&lt;em&gt;</span>ข้อความเน้นเสียง<span class="html-tag">&lt;/em&gt;</span>
+<span class="line-no">5</span> <span class="html-tag">&lt;u&gt;</span>ข้อความขีดเส้นใต้<span class="html-tag">&lt;/u&gt;</span>
+<span class="line-no">6</span> <span class="html-tag">&lt;mark&gt;</span>ข้อความที่ถูกเน้น<span class="html-tag">&lt;/mark&gt;</span>
+<span class="line-no">7</span> <span class="html-tag">&lt;small&gt;</span>ข้อความขนาดเล็ก<span class="html-tag">&lt;/small&gt;</span>
+<span class="line-no">8</span> <span class="html-tag">&lt;del&gt;</span>ข้อความที่ถูกลบ<span class="html-tag">&lt;/del&gt;</span>
+<span class="line-no">9</span> x<span class="html-tag">&lt;sup&gt;</span>2<span class="html-tag">&lt;/sup&gt;</span>
+<span class="line-no">10</span> H<span class="html-tag">&lt;sub&gt;</span>2<span class="html-tag">&lt;/sub&gt;</span>O</pre>
+        </div>
+    </div>
+
+</div>
+
+            <!-- card 3 -->
+            <div class="card">
+
+
+                <span>🎯</span>
+
+                กิจกรรมฝึกปฏิบัติ
+
+
+                <ul class="">
+                    <li>
+                        <span>✓</span>
+                        <span>ให้นักศึกษาสร้างหน้าเว็บ 1 หน้า</span>
+                    </li>
+
+                    <li>
+                        <span>✓</span>
+                        <span>ใช้แท็ก formatting อย่างน้อย 6 รูปแบบ</span>
+                    </li>
+
+                    <li>
+                        <span >✓</span>
+                        <span>
+                            ทดลองเปรียบเทียบ
+                            <span>&lt;b&gt;</span> กับ
+                            <span>&lt;strong&gt;</span>
+                            และ
+                            <span>&lt;i&gt;</span> กับ
+                            <span>&lt;em&gt;</span>
+                        </span>
+                    </li>
+
+                    <li>
+                        <span>✓</span>
+                        <span>ปรับสี ขนาด และพื้นหลังบางข้อความด้วย CSS</span>
+                    </li>
+
+                    <li>
+                        <span>✓</span>
+                        <span>
+                            บันทึกไฟล์ชื่อ
+                            <span>formatting.html</span>
+                        </span>
+                    </li>
+                </ul>
+
+
+
+            </div>
+        </div>
+
+        <div class="tip-box">
+
+
+
+            <h2>เกร็ดความรู้</h2>
+
+            <p>
+                แท็กจัดรูปแบบข้อความช่วยให้เนื้อหาสื่อสารชัดเจนและมีความหมายมากขึ้น
+                เช่น <span >&lt;strong&gt;</span> ใช้สำหรับข้อความสำคัญ
+                <span>&lt;em&gt;</span> ใช้เน้นความสำคัญหรืออารมณ์
+                และ <span>&lt;mark&gt;</span> ใช้เน้นข้อความที่ต้องการให้โดดเด่น
+                แท็กเหล่านี้ช่วยเพิ่มความอ่านง่ายและช่วยจัดระเบียบเนื้อหาให้ผู้ใช้งานเข้าใจได้ง่ายขึ้น
+            </p>
+
+
+
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>Copyright © 2026 Thitipat 006 All rights reserved.</footer>
+
+
