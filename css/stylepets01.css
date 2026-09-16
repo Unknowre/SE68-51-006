@@ -1,0 +1,280 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+
+    background: linear-gradient(135deg, rgb(230, 227, 227) 0%, #FFFFFf 50%, rgb(79, 128, 128) 100%);
+}
+
+.container {
+    width: 1320px;
+    margin: 0 auto;
+}
+
+:root {
+    /* สีหลักของเว็บ */
+    --primary-color: blue;
+    --primary-dark-color: rgb(255, 255, 255);
+    --secondary-color: rgb(214, 7, 255);
+
+    /* สีข้อความ */
+    --text-color : black;
+    --text-color-p : rgb(95, 95, 95);
+    --text-nav : rgb(36, 34, 34) ;
+    --text-white : white;
+
+    /* สีพื้น */
+    --btn-bg-color: rgb(167, 38, 167);
+    --footer-bg-color: black;
+
+    /* สีเงา */
+    --header-shadow: 0 0 15px rgba(2, 5, 8, 0.3);
+    --card-shadow: 0 3px 10px  rgb(18, 37, 248);
+
+    /* สีขอบ */
+    --border-color: rgb(255, 253, 253);
+}
+
+/* =========================
+            Header
+============================*/
+.header {
+    background-color: var(--primary-dark-color);
+    box-shadow: var(--header-shadow);
+
+    position: sticky;
+    top: 0;
+    z-index: 10px;
+
+    background-color: rgba(85, 94, 94, 0.322);
+    backdrop-filter: blur(10px);
+}
+
+.header-content {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 120px;
+    
+    gap: 15px;
+
+    /* padding: 40px 5px;
+    padding-block: 1.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem; */
+}
+.header-content p {
+    color: var(--text-color-p);
+}
+
+.header-title {
+    color: var(--primary-color);
+
+    font-size: clamp(2rem, 5vw, 3rem);
+
+    line-height: 1.2;
+    margin-bottom: 0.25rem;
+}
+
+
+
+/* =========================
+            Nav
+============================*/
+nav {
+    padding-block: 2rem;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-nav);
+
+    padding: 0.65rem 1.2rem;
+    box-shadow: var(--header-shadow);
+    border-radius: 999px;
+    
+    margin-right: 0.5rem;
+    transition: transform 0.5s;
+    
+    display: inline-block;
+}
+
+nav a:hover {
+    transform: translateY(-10px);
+    background-color: var(--secondary-color);
+    color: var(--text-white);
+}
+
+a.active {
+    background-color: var(--btn-bg-color);
+    color: var(--text-white);
+}
+
+
+/* =========================
+            Main
+============================*/
+.page-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 25px;
+}
+
+.pet-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.pet-card img {
+    height: 16.25rem;
+    width: 100%;
+
+    object-fit: cover;
+}
+
+.pet-card {
+    border: var(--border-color);
+    box-shadow: var(--header-shadow);
+    border-radius: 0.75rem;
+    overflow: hidden;
+    transition: 0.3s, box-shadow 0.5;
+}
+
+.pet-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--card-shadow);
+}
+
+.pet-content {
+    padding: 1.25rem;
+}
+
+.pet-content p {
+    direction: none;
+}
+
+.pet-content h2 {
+    color: var(--primary-color);
+}
+
+.breed {
+    color: var(--text-color-p);
+}
+
+/* =========================
+        Information
+============================*/
+.info-section {
+    margin-top: 3rem;
+}
+
+.info-title {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+
+.info-card {
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    text-align: center;
+    box-shadow: var(--header-shadow);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.info-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--card-shadow);
+}
+
+.info-card i {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+}
+
+.info-card h3 {
+    margin-bottom: 0.5rem;
+}
+
+.info-blue {
+    background-color: #dceeff;
+    color: #174c7e;
+}
+
+.info-purple {
+    background-color: #eee2ff;
+    color: #62358c;
+}
+
+.info-green {
+    background-color: #dff4e8;
+    color: #286442;
+}
+
+.info-orange {
+    background-color: #ffe8d5;
+    color: #8b4a18;
+}
+
+
+/* =========================
+            Footer
+============================*/
+footer {
+    background-color: var(--footer-bg-color);
+    color: var(--text-white);
+
+    align-items: center;
+    padding-block: 2rem;
+
+    margin-top: 2rem;
+}
+footer p {
+    text-align: center;
+}
+
+@media (max-width: 1350px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 900px) {
+    .info-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .pet-grid,
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* =========================
+            Resto
+============================*/
