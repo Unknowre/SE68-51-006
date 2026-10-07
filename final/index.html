@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Final — ฝึกสอบ HTML / CSS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="#home">Logo</a>
+    <div class="menu">
+      <a href="#home">Home</a>
+      <a href="#cards">Services</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+  <main>
+    <section id="home" class="hero">
+      <div>
+        <h1>ฝึกสอบ HTML / CSS</h1>
+        <p>ฝึก Navbar, Hero, Cards, Form และ Responsive</p>
+        <a href="#contact" class="button">เริ่มต้น</a>
+      </div>
+      <div class="picture">พื้นที่รูปภาพ</div>
+    </section>
+    <section id="cards" class="cards">
+      <div class="card"><h2>Card 1</h2><p>รายละเอียด</p></div>
+      <div class="card"><h2>Card 2</h2><p>รายละเอียด</p></div>
+      <div class="card"><h2>Card 3</h2><p>รายละเอียด</p></div>
+    </section>
+    <section id="contact">
+      <h2>ติดต่อเรา</h2>
+      <form>
+        <div class="form-grid">
+          <div>
+            <label for="name">ชื่อ</label>
+            <input id="name" name="name" type="text" placeholder="กรอกชื่อ" required>
+          </div>
+          <div>
+            <label for="email">อีเมล</label>
+            <input id="email" name="email" type="email" placeholder="กรอกอีเมล" required>
+          </div>
+        </div>
+        <fieldset>
+          <legend>เลือกหลักสูตร</legend>
+          <label><input type="radio" name="course" value="html" required> HTML</label>
+          <label><input type="radio" name="course" value="css"> CSS</label>
+        </fieldset>
+        <button type="submit" class="button full">ส่งข้อมูล</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
