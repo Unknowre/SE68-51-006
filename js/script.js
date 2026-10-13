@@ -166,8 +166,10 @@ function renderCategories() {
    
     categoryFilter.innerHTML = categories.map(category => `
         <button
+        type="button"
+        aria-pressed="${selectedCategory === category.value}"
         class="category-btn ${selectedCategory === category.value ? 'active' : ''}"
-        onclick="selectCategory('${category.value}')"
+        onclick="selectCategory('${category.value}', this)"
         >
         <span>${category.icon}</span>
         <span>${category.name}</span>
@@ -216,11 +218,17 @@ function renderCategories() {
 // 1) สร้างฟังก์ชันชื่อ selectCategory โดยรับข้อมูลเข้ามา 1 ตัว คือcategory
 // 2) นำค่าที่รับมาเก็บไว้ในตัวแปร selectedCategory
 // 3) เรียกฟังก์ชัน renderCategories() เพื่อสร้างปุ่มหมวดหมู่ใหม่อีกครั้ง เหตุผลสำคัญคือ มีโค้ด
-// class="category-btn ${selectedCategory === category.value ? 'active' : ''}"
+// class="category-btn" จะมี active เมื่อหมวดหมู่ตรงกับ selectedCategory
 // 4) เรียกฟังก์ชัน renderPets() เพื่อกรองและแสดงสัตว์ตามหมวดหมู่ที่เลือก
 
- function selectCategory(category) {
+ function selectCategory(category, button) {
      selectedCategory = category;
+     // เมนูด้านบนและปุ่มหมวดหมู่ใช้สถานะเดียวกัน
+     document.querySelectorAll('.navbar-nav button[data-category]').forEach(item => {
+         const active = item.dataset.category === category;
+         item.classList.toggle('active', active);
+         item.setAttribute('aria-pressed', String(active));
+     });
      renderCategories();
      renderPets();
  }
